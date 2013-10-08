@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>
+		ssnSpy: a jquery plugin - sample page
+	</title>
+<link rel="stylesheet" href="jquery.ssnSpy/css/ssnSpy.css" type="text/css" >
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="jquery.ssnSpy/ssnSpy.js"></script>
+
+<script>
+	$(function(){
+		$.plugin( 'ssnSpy', SSNSpy );
+
+		$('#ssn').ssnSpy({'timeout': 2000});
+	});
+</script>
+<body>
+	<form>
+		<div>
+			<label>SSN</label>
+		</div>
+		<div>
+			<input id="ssn" type="password" value="" style="float: left; clear:both; " />
+		</div>
+	</form>
+</body>
+</html>
